@@ -1,0 +1,211 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{background-color: rgb(255, 254, 254);
+    font-family: 'Lato', sans-serif;}
+
+body::before{content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(https://i.pinimg.com/564x/9f/22/b5/9f22b50f9502c5e74b5cf159785b235c.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;}
+
+#page-wrapper{position: relative;}
+
+li{list-style: none;}
+
+a{color: #000;
+    text-decoration: none;}
+
+a:hover{color: orange;}
+
+.container{max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;}
+
+.btn{padding: 0 20px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 3px black solid;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;}
+
+.grid{display: flex;}
+
+#header-img{width: 100px;}
+
+header{position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 70px;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(252, 249, 249);}
+
+@media(max-width: 600px){header{flex-wrap: wrap;}}
+
+.logo{width: 60vw;}
+
+@media(max-width: 650px){.logo{position: relative;
+margin-top: 15px;
+width: 100%;
+}}
+
+.logo>img{width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;}
+
+@media(max-width: 650px){.logo>img{margin: 0 auto;}}
+
+nav {font-weight: 400;}
+
+@media(max-width: 650px){nav{margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;}
+    nav-li{padding-bottom: 5px;}}
+
+nav>ul{width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+
+@media(max-width: 650px){nav>ul{flex-direction: column;}}
+
+#conection{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 70px;}
+
+#conection>h2{margin:20px 0 20px 0;
+    font-size: 500;
+    word-wrap: break-word;}
+
+#conection input[type='email']{max-width: 275px;
+    width: 100%;
+    padding: 5px;}
+
+#conection input[type='submit']{max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;}
+
+#conection input[type="submit"]:hover{ background-color: orange;}
+
+@media(max-width: 650px){#conection{margin-top: 120px;}}
+
+#we-offer{margin-top: 30px;}
+
+#we-offer .icon{display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: rgb(144, 197, 64);
+    }
+
+/*@media(max-width: 550px){#we-offer .icon{display: none;}}*/
+
+#we-offer .desc{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;}
+
+@media(max-width: 550px){#we-offer .desc{width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;}}
+
+@media(max-width: 650px){#we-offer{margin-top: 0;}}
+
+#provenance{margin-top: 50px;
+    display: flex;
+    justify-content: center;}
+
+#provenance>iframe{max-width: 560px;
+    width: 100%;}
+
+#pricing{margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+.product{display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*width: calc(100% /3);}*/
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;}
+
+.product> .trademark{background-color: rgb(245, 241, 241);
+    color: black;
+    padding: 15px 0px;
+    width: 100%;
+    font-weight: 900;}
+
+.product > h2{margin-top: 15px;}
+
+.product > ol{margin: 15px 0px;}
+
+.product > ol > li{padding: 5px;}
+
+.product>button{border: 0px;
+    margin: 15px 0;
+    background-color: #f1c40f;}
+
+.product>button:hover{background-color: orange;
+    transition: blackground-color 1s;}
+
+@media(max-width:800px){#pricing{flex-direction: column;}
+    .product{max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;}}
+
+footer{margin-top: 30px;
+    background-color:rgb(155, 201, 86);
+    padding: 20px;}
+
+footer>ul{display: flex;
+    justify-content: flex-end;}
+
+footer>ul>li{padding: 0 10px;}
+
+footer>span{margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    color: #fff;}
+
+

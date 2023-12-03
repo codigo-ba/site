@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Footwear Store SvyFormP2</title>
+        <link rel="stylesheet" type="text/css" href="BachioSurveyStyle.css">
+    </head>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">BACHIO Shoes Survey Form</h1>
+            <p id="description">Customers Styles and Preferences</p>
+         </p>
+        </header>
+        <form id="survey-form">
+           <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Enter yor name..." required>
+           </div>
+           
+           <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Enter yor Email..." required>
+           </div>
+
+           <div class="form-group">
+               <p>What is your Age Range?</p>
+               <label for="twenties">
+                   <input id="twenties" value="16-a-29" type="radio" name="age-range" class="input-radio">16 a 29</label>
+                <label for="thirties">
+                    <input id="thirties" value="30-a-39" type="radio" name="age-range" class="input-radio">30 a 39</label>
+                <label for="forties">
+                    <input id="foties" value="40-a-49" type="radio" name="age-range" class="input-radio" checked>40 a 49</label>
+                <label for="fifties">
+                        <input id="fifties" value="50-a-59" type="radio" name="age-range" class="input-radio">50 a 59</label>
+                <label for="plussixties">
+                            <input id="plussixties" value="+60" type="radio" name="age-range" class="input-radio">+60</label>
+           </div>
+
+           <div class="form-group">
+               <label for="number" id="number-label">Size <em>(Europe)</em></label>
+               <input id="number" type="number" name="size" min="35" max="41" class="form-control" placeholder="Select your size...">
+           </div>
+
+           <div class="form-group">
+               <p>Which style best defines you?</p>
+               <select id="dropdown" name="shoestyle" class="form-control" required>
+                   <option disabled selected value>Select your Style</option>
+                   <option value="urban">Urban</option>
+                   <option value="casual">Casual</option>
+                   <option value="indy">Indy</option>
+                   <option value="sporty">Sporty</option>
+                   <option value="formal">Formal</option>
+               </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which material do you prefer for your shoes?</p>
+                <label for="leather">
+                    <input id="leather" value="leather" type="radio" name="material" class="input-radio" checked>Leather</label>
+                <label for="synthetic">
+                    <input id="synthetic" value="synthetic" type="radio" name="material" class="input-radio">Synthetic</label>
+                <label for="textile">
+                    <input id="textile" value="textile" type="radio" name="material" class="input-radio">Textile</label>
+                <label for="rubber">
+                    <input id="rubber" value="rubber" type="radio" name="material" class="input-radio">Rubber</label>
+            </div>
+
+            <div class="form-group">
+                <p>What kind of shoes do you usually wear?<em> Choose all you want</em></p>
+                <label for="sneakers">
+                    <input id="sneakers" type="checkbox" name="shoes-kind" value="sneakers" class="input-checkbox">SNEAKERS</label>
+                <label for="boots">
+                    <input id="boots" type="checkbox" name="shoes-kind" value="boots" class="input-checkbox">BOOTS</label>
+                <label for="booties">
+                    <input id="booties" type="checkbox" name="shoes-kind" value="booties" class="input-checkbox">BOOTIES</label>
+                <label for="sandals">
+                    <input id="sandals" type="checkbox" name="shoes-kind" value="sandals" class="input-checkbox">SANDALS</label>
+                <label for="flats">
+                    <input id="flats" type="checkbox" name="shoes-kind" value="flats" class="input-checkbox">FLATS</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any Suggestions for Future Footwear Designs?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Tell us your ideas..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-buttom">SUBMIT</button>
+            </div>
+ 
+        </form>
+    </div>
+
+    <footer id="references-links">
+        <h4>Take a look at <a href="https://sites.google.com/view/bachio-shoes/p%C3%A1gina-principal" target="_blank">BACHIO Shoes footwear creations</a></h4>
+    </footer>
+</html>

@@ -1,0 +1,675 @@
+
+/*Nav_Bar*/
+.navbar{
+  padding: 1rem;
+  background-color: rgb(188, 219, 248);
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+/*Estilos_Generales*/
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Rubik Dirt', cursive; /*Google Fonts. Add the HTML in <head> first*/ 
+  animation-duration: 3s; /*Simple animation with css*/
+  animation-name: slidein;/*https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations/Using_CSS_animations*/
+  }
+@keyframes slidein{
+  from{
+      margin-left: 100%;
+      width: 300%;
+  }
+  to{
+      margin-left: 0%;
+      width: 100%;
+  }
+}
+.seccion-oscura{
+  color:rgb(43, 43, 44);
+  background: radial-gradient(rgb(58, 140, 194), rgb(185, 227, 243));
+}
+.seccion-clara{
+  color: black;
+  background-color: white;
+}
+.seccion-clara-carousel{
+  color: black;
+  background-color: rgb(164, 214, 245);
+}
+.seccion-titulo{
+  font-size: 2.5rem;
+  padding: 15px 0; /*15 arr y ab; 0 izq y der*/
+  font-family: 'Rubik Dirt', cursive;
+}
+.seccion-descripcion{
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+.seccion-texto{
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.btn-info{
+  font-size: 1.1rem;
+  margin: 30px;
+  background-color: rgb(145, 191, 235);
+  border-color: rgb(145, 191, 235);
+}
+.texto-negro{
+  color: black;
+}
+.texto-blanco{
+  color: white;
+}
+/*Hero_Section*/
+.hero{
+  background-image: url(images/portrait_Udecide.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 900px;
+  text-align: center;
+}
+.hero-principal{
+  padding: 3rem;
+}
+.hero-principal h2{
+  font-size: 1.5rem;
+  color: #493e3e;
+
+}
+/*About Me Section*/
+.sobre-mi{
+  height: 500px;
+  padding: 10px;
+  background: radial-gradient(rgb(58, 140, 194), rgb(185, 227, 243));
+}
+.sobre-mi .contenedor{ /*siempre que contenedor este dentro de sobre-mi*/
+  max-width: 600px;
+  text-align: center;
+ 
+}
+/*Seccion Experiencia*/
+.experiencia{
+  background-color: white;
+  padding: 40px 40px 60px 40px;
+}
+.experiencia .columna{
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  background-color: white;
+  border: 2px snow #8080804d;
+  /*border-radius: 200px;*/
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+  transition: all .02s ease-in ;
+}
+/*cambio col para tener acomodar mis columnas nuevas: repito las caracteris de columna y personalizo*/
+.experiencia .col{
+  padding: 10px;
+  margin: 20px;
+  margin-top: 40px;
+  margin-left: 0px;
+  background-color: white;
+  border: 2px snow #8080804d;
+  /*border-radius: 200px;*/
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.btn-outline-info{
+  color: white;
+  background-color: rgb(150, 193, 233);
+  border-color: rgb(150, 193, 233);
+}
+.experiencia .columna:hover{
+  color: white;
+  background-color: rgb(134, 70, 110);
+}
+
+
+/*repito las caracteris de columna y personalizo*/
+.experiencia .col:hover{
+  transform: scale(1.2);
+}
+.experiencia i{
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+.experiencia-titulo{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badges-contenedor{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badge{
+  margin: 3px;
+}
+/*Web Design & Dev*/
+.desarrollo{
+  padding: 40px;
+}
+.desarrollo-web .desarrollo{
+  position: relative;
+}
+.desarrollo-web .desarrollo:hover img{
+  opacity: 0.2;
+}
+.desarrollo-web .desarrollo:hover .overlay{
+  opacity: 1;
+}
+.overlay .iconos-contenedor{
+  display: flex;
+}
+.overlay i{
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+/*sub_mktOnline Seccion platforms-info*/
+.platforms-info{
+  width: 75vw;
+  margin: auto;
+  padding: 40px 40px 60px 40px;
+}
+.platforms-info .google-ads{
+  background:linear-gradient(rgb(238, 241, 53), rgb(185, 227, 243));
+}
+.platforms-info .face-ads{
+  background:linear-gradient(rgb(185, 227, 243), rgb(247, 173, 222));
+}
+.platforms-info .insta-ads{
+  background:linear-gradient(rgb(247, 173, 222), rgb(157, 219, 243));
+}
+.platforms-info .organic-ads{
+  background:linear-gradient(rgb(157, 219, 243), rgb(210, 235, 245));
+}
+
+.platforms-info  col{
+  padding: 10px;
+  margin: 20px;
+  margin-top: 30px;
+  margin-left: 0px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.platforms-info img{
+  padding: 10px;
+  margin: 30px 0px 0px 30px;
+}
+.platforms-info p{
+  padding: 10px;
+  margin-top: 20px;
+  font-family: lato;
+  font-size: 1.1rem;
+}
+/*Proyectos*/
+.proyectos-recientes{
+  padding: 40px;
+}
+.proyectos-recientes img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+.proyectos-contenedor{
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay p{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(58, 140, 194);
+  margin-bottom: 0;
+}
+.proyecto{
+  position: relative;
+}
+.proyecto:hover img{
+  opacity: 0.2;
+}
+.proyecto:hover .overlay{
+  opacity: 1;
+}
+.overlay .iconos-contenedor{
+  display: flex;
+}
+.overlay i{
+  color: rgb(58, 140, 194);
+  font-size: 60px;
+  margin: 10px;
+}
+/*Section Slider*/
+.slider{
+  width: 95vw; /*95% del viewport*/
+  height: auto;
+  margin: auto;
+  margin-bottom: 70px;
+  overflow:hidden;
+}
+.slider .slider-track{
+  display: flex; /*1 al lado del otro*/
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite; /*x si no están incluídas las actualiz de html5 y css en algunos navegad*/
+  width: calc(150px * 16); /*img size I want x 7imgs repeated twice*/
+}
+.slider .slide{
+  width: 150px;
+}
+.slider .slide img{
+  width: 100%; /*the 100% of its container(slide)*/
+}
+@keyframes scroll {
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(calc(-150px * 8));
+    transform: translateX(calc(-150px * 8));
+  }
+}
+/*Section Articulos*/
+.articulos{
+  min-height: 500px;
+  padding: 30px;
+}
+.articulos .btn{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.articulos .card{
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+.articulos .card-header{
+  background: linear-gradient(rgb(245, 200, 237), rgb(252, 230, 248)) ;
+  font-weight: bold;
+}
+/*ARANCELES & PRECIOS*/
+/*Section Precios*/
+.hero h1{
+  font-size: 5rem;
+}
+.hero h2{
+  font-size: 2.5rem;
+}
+.precios{
+  width: 85vw;
+  margin: auto;
+  padding: 40px 40px 60px 40px;
+}
+.precios-contenedor{
+  width: 75vw;
+  position: relative;
+  background-color: white;
+  padding: 40px 40px 60px 40px;
+}
+.precios-contenedor .portada{
+  margin-top: 50px;
+}
+.precios-contenedor .portada .col{
+  background: white;
+  border: 5px solid rgb(241, 173, 219) ;
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  border-bottom: unset;
+}
+.precios-contenedor .col{
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  background: radial-gradient(rgb(58, 140, 194), rgb(241, 173, 219));
+  /*background-color: white;*/
+  border: 2px snow #8080804d;
+  /*border-radius: 200px;*/
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.precios-contenedor h1{
+  margin-top: 15px;
+}
+.precios-contenedor img{
+  padding: 10px;
+  margin: 0;
+}
+.precios-contenedor h2{
+  margin: 20px auto;
+  font-family: lato;
+}
+.precios-contenedor .btn{
+  margin-top: 7px;
+}
+.precios-contenedor i{
+  font-size: 1.5rem;
+}
+/*Section: Testimonios*/
+.testimonios{
+  padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel{
+  max-width: 800px;
+}
+.carousel-item{
+  height: 500px;
+}
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonio-imagen{
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+.testimonio-texto{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+.testimonio-info{
+  font-weight: bold;
+  text-align: center;
+}
+.testimonio-info p{
+  margin-bottom: 0;
+}
+.testimonio-info .cliente{
+  font-size: 1.2rem;
+}
+.testimonio-info .cargo{
+  font-size: 0.9rem;
+  color: #656060;
+}
+/*Section Contact Form*/
+.contact-form{
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(rgb(58, 140, 194), rgb(185, 227, 243));
+}
+form{
+  padding: 50px 55px;
+  text-align: center;
+  width: 400px;
+}
+.input-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+label{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+input, textarea{
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  background-color: rgb(248, 234, 247);
+  border: 2px solid rgb(200, 233, 247);
+  border-radius: 10px; 
+  color: #0a0a23;
+  outline: none;
+}
+input::placeholder, textarea::placeholder{
+  color: #0a0a23
+}
+.input-group .btn{
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a0a23;
+  border-radius: 25px;
+  background-color: rgb(100, 157, 223);
+  box-shadow: 0 0 10px rgb(145, 192, 245);
+  cursor: pointer;
+}
+.input-group .btn:hover{
+  background-color: rgb(233, 184, 230);
+}
+@media(max-width: 991px){
+  form{
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input{
+    padding: 15px;
+  }
+}
+/*Section: Contacto*/
+.contacto .container{
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.contacto .rectangulo{
+  margin-top: -3rem;
+  background: radial-gradient(rgb(241, 152, 207), rgb(185, 227, 243));
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto .descripcion{
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto button{
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+  background-color: white;
+  color: black;
+}
+.contacto button i{
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button i:hover{
+  color: black;
+}
+/*Section: Site Map*/
+.map{
+  padding: 40px;
+}
+.map-diagram{
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.map .footer-logo{
+  height: 160px;
+  width: 160px;
+  padding: 10px;
+}
+.map-diagram .buttons1 .btn{
+  background-color: rgb(47, 99, 158);
+  color: white;
+  border-radius: 100%;
+  padding: 15px;
+  box-shadow: 2px 2px ghostwhite;
+}
+.map-diagram .buttons2 .btn{
+  background-color: rgb(68, 135, 212);
+  color: white;
+}
+.map-diagram .buttons3 .btn{
+  background-color: rgb(226, 175, 241);
+  color: white;
+}
+.map-diagram .buttons4 .btn{
+  background-color: rgb(199, 135, 196);
+  color: white;
+}
+.map-diagram .buttons5 .btn{
+  background-color: rgb(216, 182, 214);
+  color: white;
+}
+.map-diagram .buttons6 .btn{
+  background-color: rgb(135, 186, 245);
+  color: white;
+}
+.map-diagram .btn-tittle{
+  border-radius: 150px;
+  box-shadow: 2px 2px ghostwhite;
+}
+.map-diagram .buttons6 .alone2{
+  background-color: rgb(47, 99, 158);
+  color: white;
+  border-radius: 40%;
+  box-shadow: 2px 2px ghostwhite;
+}
+.map-diagram .buttons6 .alone1{
+  background-color: rgb(68, 135, 212);
+  color: white;
+  border-radius: 40%;
+  box-shadow: 2px 2px ghostwhite;
+}
+/*Section: Footer*/
+footer{
+  min-height: 500px;
+}
+.footer-logo{
+  height: 160px;
+  width: 160px;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px 3px white;
+}
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+.iconos-footer{
+  padding: 20px;
+}
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+.iconos-redes-sociales a:hover i{
+  color: black;
+}
+.derechos-de-autor{
+  font-size: 15px;
+  color: #f7f3f3;
+  padding: 20px;
+}
+
+/*ADAPTABLE RESPONSIVE*/
+/*1- Don't show icon in small devices*/
+@media  screen and (max-width: 767px) {
+  .navbar-brand{
+    display: none;
+  }
+}
+  /*2-En Testimonios achico foto y texto pq se sale de contendor y se pierrde info*/
+@media screen and (max-width: 800px) {
+  .testimonio-imagen{
+    height: 120px;
+    width: 120px;
+  }
+  .testimonio-texto{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .testimonio-imagen{
+    height: 100px;
+    width: 100px;
+  }
+  .testimonio-texto{
+    font-size: 14px;
+  }
+}
+  /*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen{
+    max-width: 600px;
+  }
+}
+/*para q texto e img de overlay se achiquen en dispositivos small*/
+@media screen and (max-width: 400px) {
+  .overlay p{
+    font-size: 18px;
+  }
+  .overlay i{
+    font-size: 40px;
+  }
+}
