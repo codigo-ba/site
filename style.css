@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 /*Nav_Bar*/
 .navbar{
   padding: 1rem;
@@ -87,7 +89,7 @@ h1{
 }
 /*About Me Section*/
 .sobre-mi{
-  height: 500px;
+  min-height: 700px;
   padding: 10px;
   background: radial-gradient(rgb(58, 140, 194), rgb(185, 227, 243));
 }
@@ -638,6 +640,15 @@ footer{
   .navbar-brand{
     display: none;
   }
+  .hero-principal h1{
+    font-size: 2.8rem;
+  }
+  .hero-principal h2{
+    font-size: 1.2rem
+  }
+  h2 .seccion-titulo{
+    font-size: 2.3rem;
+  }
 }
   /*2-En Testimonios achico foto y texto pq se sale de contendor y se pierrde info*/
 @media screen and (max-width: 800px) {
@@ -657,6 +668,18 @@ footer{
   .testimonio-texto{
     font-size: 14px;
   }
+  .hero-principal h1{
+    font-size: 2.5rem;
+  }
+  .hero-principal h2{
+    font-size: 1.2rem;
+  }
+  h2{
+    font-size:2.1rem;
+  }
+  h2 .seccion-titulo{
+    font-size:2.1rem;
+  }
 }
   /*--------------------------------------------------------------------------------------*/
 @media screen and (min-width: 700px) {
@@ -671,5 +694,8 @@ footer{
   }
   .overlay i{
     font-size: 40px;
+  }
+  .seccion-texto{
+    font-size: 1rem;
   }
 }
