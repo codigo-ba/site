@@ -327,18 +327,17 @@ h1{
 /*ARANCELES & PRECIOS*/
 /*Section Precios*/
 .hero h1{
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .hero h2{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .precios{
-  width: 85vw;
+  width: 100vw;
   margin: auto;
-  padding: 40px 40px 60px 40px;
 }
 .precios-contenedor{
-  width: 75vw;
+  width: 90vw;
   position: relative;
   background-color: white;
   padding: 40px 40px 60px 40px;
@@ -367,6 +366,7 @@ h1{
   justify-content: space-evenly;
 }
 .precios-contenedor h1{
+  font-size: 2.1rem;
   margin-top: 15px;
 }
 .precios-contenedor img{
@@ -374,6 +374,7 @@ h1{
   margin: 0;
 }
 .precios-contenedor h2{
+  font-size: 1.3rem;
   margin: 20px auto;
   font-family: lato;
 }
@@ -649,6 +650,11 @@ footer{
   h2 .seccion-titulo{
     font-size: 2.3rem;
   }
+  .precios-contenedor{
+    padding: 20px 20px 30px 20px;
+  }
+  .precios-contenedor img{
+    max-width: 95%;
 }
   /*2-En Testimonios achico foto y texto pq se sale de contendor y se pierrde info*/
 @media screen and (max-width: 800px) {
