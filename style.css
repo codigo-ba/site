@@ -653,9 +653,7 @@ footer{
   .precios-contenedor{
     padding: 20px 20px 30px 20px;
   }
-  .precios-contenedor img{
-    max-width: 95%;
-}
+  
   /*2-En Testimonios achico foto y texto pq se sale de contendor y se pierrde info*/
 @media screen and (max-width: 800px) {
   .testimonio-imagen{
