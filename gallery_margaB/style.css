@@ -1,0 +1,83 @@
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+body{
+    background-color: #323232;
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper{
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+.swiper-slide{
+    width:300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.icons i{
+    font-size: 20px;
+    color: #FF8900;
+}
+.icons img{
+    width: 120px;
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+.product-txt{
+    /*p q ocupe mitad de tamaño*/
+    flex-basis: 30%;
+    text-align: left;
+}
+.product-txt span{
+    font-size: 15px;
+    color: #FF8900;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.product-txt h3{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.product-txt p{
+    font-size: 12px;
+    color: #c4c4c4;
+}
+.product-txt .atrib{
+    font-size: 10px;
+    text-align: center;
+}
+.product-img{
+    flex-basis: 70%;
+    text-align: right;
+}
+.product-img img{
+    width: 150px;
+}
+.btn-1{
+    display: inline-block;
+    background-color: #323232;
+    padding: 10px 30px;
+    border: 1px solid #FF8900;
+    border-radius: 25px;
+    color: #FF8900;
+    text-decoration: none;
+    margin-top: 45px;
+}
